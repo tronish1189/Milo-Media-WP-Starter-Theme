@@ -3,6 +3,10 @@
 // Enable Featured Images
 add_theme_support( 'post-thumbnails' );
 
+wp_enqueue_style( 'theme-style', get_template_directory_uri() . "/src/css/main.css", array("destyle"));
+wp_enqueue_style( 'destyle', get_template_directory_uri() . "/src/css/destyle.css");
+
+
 // Add custom widgets to the dashboard.
 function milo_add_dashboard_widgets() {
 	wp_add_dashboard_widget(
