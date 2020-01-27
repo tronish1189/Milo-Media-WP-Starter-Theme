@@ -1,11 +1,14 @@
 <?php
 
+// Enqueue Scripts and CSS Files
+function enqueueFiles() {
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
+  wp_enqueue_style( 'style-css', get_template_directory_uri() . '/src/css/styles.css');
+}
+add_action( 'wp_enqueue_scripts', 'enqueueFiles' );
+
 // Enable Featured Images
 add_theme_support( 'post-thumbnails' );
-
-wp_enqueue_style( 'theme-style', get_template_directory_uri() . "/src/css/main.css", array("destyle"));
-wp_enqueue_style( 'destyle', get_template_directory_uri() . "/src/css/destyle.css");
-
 
 // Add custom widgets to the dashboard.
 function milo_add_dashboard_widgets() {
