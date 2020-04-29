@@ -25,6 +25,13 @@ function milo_add_dashboard_widgets() {
 }
 add_action( 'wp_dashboard_setup', 'milo_add_dashboard_widgets' );
 
+//Add ACF Options page
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page();
+	
+}
+
 // Create Documentation admin widget
 function milo_documentation_dashboard_widget() {
 	echo "
