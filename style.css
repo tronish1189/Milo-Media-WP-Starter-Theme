@@ -7,3 +7,53 @@ Author URI: https://www.milomedia.co
 Version: 1.0
 Tags: responsive, black, white, columns, custom menu, etc.
 */
+
+/*Reset styles*/
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+body {
+	overflow-x: hidden;
+    margin: 0;
+    position:relative;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, button {
+    margin: 0;
+    background:none;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    padding:0;
+    cursor:pointer;
+    border:none;
+}
